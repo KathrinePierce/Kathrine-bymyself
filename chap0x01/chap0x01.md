@@ -9,39 +9,39 @@
 
 #### 1、下载纯净版 Ubuntu 安装镜像 iso 文件,并计算对照校验和
 
-![下载iso文件](img/download-iso.png)
+![下载iso文件](/chap0x01/img/download-iso.png)
 
 #### 2、手动安装ubuntu并得到一个初始的「自动配置描述文件」
 
        （1）设置网卡
 
-![设置网卡](/img/set-network.png)
+![设置网卡](/chap0x01/img/set-network.png)
        
        
        （2）选择下载好的安装镜像：
 
-![选择安装镜像](/img/choose-iso.png)
+![选择安装镜像](/chap0x01/img/choose-iso.png)
 
        （3）手动安装ubuntu20.04，并查看ip地址
        
-![安装成功](/img/install-success.png)
+![安装成功](/chap0x01/img/install-success.png)
 
        （4）使用ssh远程访问虚拟机
        将/var/log/installer/autoinstall-user-data拷贝到本地
 
              ·修改属主并查看文件
 
-![修改属主并查看文件](/img/chown+cat.png)
+![修改属主并查看文件](/chap0x01/img/chown+cat.png)
 
              ·下载文件到本地
 scp cuc@192.168.56.108:/var/log/installer/autoinstall-user-data ./
 
 
-![下载自动配置描述文件](/img/download.png)
+![下载自动配置描述文件](/chap0x01/img/download.png)
 
 #### 3、对照 Ubuntu 20.04 + Autoinstall + VirtualBox 中提供的示例配置文件 酌情修改
 
-![修改user-data文件](/img/correct.png)
+![修改user-data文件](/chap0x01/img/correct.png)
 
 #### 4、使用sftp命令将user-data与自建的meta-data文件传输到手动安装的虚拟机里
 
