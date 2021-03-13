@@ -9,7 +9,7 @@
 
 ### 1、下载纯净版 Ubuntu 安装镜像 iso 文件,并计算对照校验和
 
-![下载iso文件](/img/download-iso.png)
+![下载iso文件](img/download-iso.png)
 
 ### 2、手动安装ubuntu并得到一个初始的「自动配置描述文件」
 
